@@ -1,0 +1,20 @@
+input {
+  border: none;
+  outline: 0;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid;
+  border-color: #E3E2E2;
+}
+
+input.focus {
+  border-color: blue;
+}
+
+input.confirmed {
+  border-color: green;
+}
+
+input.error {
+  border-color: red;
+}

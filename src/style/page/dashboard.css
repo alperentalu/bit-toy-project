@@ -1,0 +1,8 @@
+.paper {
+    margin: 10px;
+    background-color: #f2f2f2;
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}

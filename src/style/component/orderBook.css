@@ -1,0 +1,60 @@
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+.order-book-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 4px;
+    min-width: 500px;
+}
+
+.order-book-title {
+    font-weight: bold;
+    padding: 15px;
+}
+
+.order-book-columns {
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: #dedede;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+
+.order-book-rows {
+    justify-content: space-around;
+    position: relative;
+}
+
+.row-items {
+    max-width: 75px;
+    text-align: left;
+}
+
+.buy-highlight,
+.sell-highlight {
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0.2;
+    height: 100%;
+}
+
+.sell-highlight {
+    background-color: red;
+}
+
+.buy-highlight {
+    background-color: green;
+}
+
+.last-transaction {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin: 20px 0;
+}

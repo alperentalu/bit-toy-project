@@ -1,0 +1,12 @@
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.header {
+    font-size: 40px;
+    font-weight: bold;
+}

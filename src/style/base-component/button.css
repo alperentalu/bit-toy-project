@@ -1,0 +1,36 @@
+.orange-button {
+    background-color: #FF7B34;
+    width: 9.479vw;
+    height: 4.444vh;
+    margin: 3px;
+    border-radius: 6px;
+}
+.orange-button:hover:enabled {
+    background-color: #FF6C1D;
+}
+.orange-button:focus {
+    background-color: #F05A09;
+}
+.green-button {
+    background-color: #35AF43;
+    width: 9.479vw;
+    height: 4.444vh;
+    margin: 3px;
+    border-radius: 6px;
+}
+.green-button:hover:enabled {
+    background-color: #239831;
+}
+.green-button:focus {
+    background-color: #178825;
+}
+button {
+    border: none;
+    color: white;
+}
+button:disabled {
+    opacity: 0.7;
+}
+button:focus {
+    outline:0;
+}
