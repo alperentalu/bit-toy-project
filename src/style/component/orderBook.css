@@ -56,5 +56,20 @@
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
+    border-top: 1px solid #9b9b9b36;
+    border-bottom: 1px solid #9b9b9b36;
+    padding: 15px 0;
     margin: 20px 0;
+}
+.green-price-text {
+    color: #03A66D;
+    font-weight: 600;
+}
+.red-price-text {
+    color: #F84960;
+    font-weight: 600;
+}
+.last-transaction-text {
+    color: #9B9B9B;
+    font-weight: bold;
 }

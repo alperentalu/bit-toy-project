@@ -15,7 +15,6 @@ export default function OrderBook() {
   }, [])
 
   return (
-    <> { orderBookData &&
       <>
         <div className="order-book-container">
           <div className="order-book-title">Emir Defteri</div>  
@@ -24,11 +23,11 @@ export default function OrderBook() {
             <div className="">Miktar</div>
             <div className="">Toplam</div>
           </div>
-          <div> { orderBookData.Buy.map((buyItems, buyIndex) => {
+          <div> { orderBookData && orderBookData.Buy.map((buyItems, buyIndex) => {
             return (
                 <div key={buyIndex} className="order-book-rows flex-center">
                   <div className="buy-highlight" style={{width: Math.floor(Math.random() * 101) + '%'}}></div>
-                  <span className="row-items">
+                  <span className="row-items green-price-text">
                     {buyItems.Price.toFixed(6)}
                   </span>
                   <span className="">
@@ -41,16 +40,16 @@ export default function OrderBook() {
               )
             })}
           </div>
-          <div className="last-transaction flex-center">
-            <div> Son İşlem </div>
-            <div className="">378.669,45 TRY</div>
-            <div className=""> ^ +2.15% </div>
-          </div>
-          <div> { orderBookData.Sell.map((sellItems, sellIndex) => {
+          {orderBookData && <div className="last-transaction flex-center">
+            <div className='last-transaction-text'> Son İşlem </div>
+            <div className="green-price-text">378.669,45 TRY</div>
+            <div className="green-price-text"> ^ +2.15% </div>
+          </div>}
+          <div> { orderBookData && orderBookData.Sell.map((sellItems, sellIndex) => {
             return (
               <div key={sellIndex} className="order-book-rows flex-center">
                 <div className="sell-highlight" style={{width: Math.floor(Math.random() * 101) + '%'}}></div>
-                <span className="">
+                <span className="red-price-text">
                     {sellItems.Price.toFixed(6)}
                   </span>
                   <span className="">
@@ -66,7 +65,6 @@ export default function OrderBook() {
         </div>
       </>
       
-    } </>
   )
 
 }
