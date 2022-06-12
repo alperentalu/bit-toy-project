@@ -14,7 +14,7 @@ export default class Button extends Component {
           className={color === "orange" ? "orange-button" : "green-button"}
           disabled={disabled ? true : false}
         >
-          Button
+          {color === "orange" ? "LOGIN" : "VALIDATE"}
         </button>
       </div>
     );
