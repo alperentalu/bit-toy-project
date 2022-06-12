@@ -123,7 +123,6 @@ export async function streamService (callBackFunc) {
           
         ],
     }
-    // console.log(orderBook);
     if(callBackFunc) {
         callBackFunc(orderBook);
     }
@@ -132,8 +131,4 @@ export async function streamService (callBackFunc) {
    
 }
 
-// function returnOrderBook (orderBook) {
-//     return orderBook
-// }
-
-// streamService();
+streamService();
