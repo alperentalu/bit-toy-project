@@ -7,7 +7,7 @@ export default class Buttons extends Component {
     return (
       <div className='button-container'>
         <div className='header-container'>
-          <span className='header'>Buttons Component</span>
+          <span className='header'>Button Components</span>
         </div>
         <div className='buttons'>
           <span>Normal</span>

@@ -6,10 +6,11 @@ import "../style/component/inputs.css"
 export default class Inputs extends Component {
   render() {
     return (
+      <>
+      <div className='header-container'>
+          <span className='header'>Input Components</span>
+        </div>
       <div className='input-container'> 
-        {/* <div className='header-container'>
-          <span className='header'>Card List Component</span>
-        </div> */}
         <div>
           <Input 
             disabled={false}
@@ -55,6 +56,7 @@ export default class Inputs extends Component {
           />
         </div>
       </div>
+        </>
     )
   }
 }

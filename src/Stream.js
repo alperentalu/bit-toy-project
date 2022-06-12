@@ -10,7 +10,7 @@ function delay(delayInms) {
 export async function streamService (callBackFunc) {
   
    while(true) {
-    let delayres = await delay(2000);
+    let delayres = await delay(1000);
     let orderBook = {
         Buy: [
             {

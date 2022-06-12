@@ -16,6 +16,9 @@ export default function OrderBook() {
 
   return (
       <>
+      <div className='header-container'>
+          <span className='header'>Order Book Component</span>
+        </div>
         <div className="order-book-container">
           <div className="order-book-title">Emir Defteri</div>  
           <div className="order-book-columns flex-center">
